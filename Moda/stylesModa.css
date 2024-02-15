@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'light';
+    src: url(textoModa/LandasansUltraLight-qZ080.otf);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(textoModa/LandasansMedium-ALJ6m.otf);
+}
+
+@font-face {
+    font-family: 'mom';
+    src: url(textoModa/MomcakeBold-WyonA.otf);
+}
+
+
+body {
+    position: relative;
+    background-image: url('imgModa/colorMesa\ de\ trabajo\ 1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.flex-container {
+    width: 100%;
+}
+
+/* SLIDER DEL DROPDOWN, LOGO Y BARRA DE BÚSQUEDA */
+.slider3 {
+    height: 10rem;
+    width: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilos personalizados para el logo y su contenedor */
+.logo-container {
+    width: auto; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 200px; 
+    height: auto; 
+}
+
+.menuButtons {
+    height: 4rem;
+    width: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los botones del menú */
+.menuButtons .custom-btn {
+    color: white;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    margin: 80px;
+    font-family: 'bold';
+}
+
+.menuButtons .custom-btn::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.menuButtons .custom-btn:hover::after {
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* Estilos adicionales para la descripción del video */
+.video-description {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco traslúcido */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.creator-icon {
+    max-width: 100px; /* Ajusta el tamaño según sea necesario */
+    margin-bottom: 10px;
+}
+
+.like-dislike-buttons {
+    margin-top: 10px;
+}
+
+.like-dislike-buttons button {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+

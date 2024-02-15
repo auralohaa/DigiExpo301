@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiExpo301 | Brillantes Digitales</title>
+    <link rel="icon" href="img/logoIconPage.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <div class="flex-container">
+        <!-- Slider Banner Superior -->
+        <div class="row slider1">
+            <div class="col-xs-12 col-md-12">
+                <p>
+                    <strong> ADVERTISEMENT </strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- Slider Banner Inferior -->
+        <div class="row slider2">
+            <div class="col-xs-12">
+                <p>
+                    DISFRUTA Y CALIFICA LOS AUDIOVISUALES MÁS TOP
+                </p>
+            </div>
+        </div>
+
+        <!-- Slider Logo y Menú desplegable -->
+        <div class="row slider3 fixed-top-row slider-fixed">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <!-- Botón del menú -->
+                <div class="dropdown">
+                    <button id="menuButton" class="btn btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/menuIcon.png" alt="Icono de Menú">
+                    </button>
+                    <!-- Menú desplegable vertical -->
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="servicios/indexServicios.html">Servicios</a>
+                        <a class="dropdown-item" href="artesanias/indexArtesanias.html">Artesanías</a>
+                        <a class="dropdown-item" href="comida/indexComida.html">Comida</a>
+                        <a class="dropdown-item" href="Moda/indexModa.html">Moda</a>
+                        <a class="dropdown-item" href="decoracionYHogar/indexDyH.html">Decoración & Hogar</a>
+                        <a class="dropdown-item" href="entretenimiento/indexEntretenimiento.html">Entretenimiento</a>
+                        <a class="dropdown-item" href="otros/indexOtros.html">Otros</a>
+                    </div>
+                </div>
+
+
+                <!-- LOGO -->
+                <div class="logo-container">
+                    <a href="index.html" class="logo-container">
+                        <img src="img/logo-no-background.png" class="rounded" alt="Logo">
+                    </a>
+                </div>
+
+
+                <!-- Barra de búsqueda en la Navbar -->
+                <div class="navbar">
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <!-- Ícono de lupa o tu propio ícono -->
+                        <img src="img/lupa.png" alt="Buscar">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal para la ventana emergente de búsqueda -->
+            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Contenido del formulario de búsqueda -->
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Botones menú -->
+        <div class="menuButtons fixed-top-row fixed2-top-row2 d-none d-md-flex">
+            <div class="col-xs-12">
+                <div class="btn-group" role="group" aria-label="Menu Buttons">
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='servicios/indexServicios.html'">Servicios</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='artesanias/indexArtesanias.html'">Artesanias</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='comida/indexComida.html'">Comida</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='Moda/indexModa.html'">Moda</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='decoracionYHogar/indexDyH.html'">Decoración & Hogar</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='entretenimiento/indexEntretenimiento.html'">Entretenimiento</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='otros/indexOtros.html'">Otros</button>
+                </div>
+            </div>
+        </div>
+
+       
+
+       
+        
+
+        <!-- Carrusel -->
+        <div id="carouselExampleCaptions" class="carousel slide fade-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <!-- Slide 2 -->
+                <div class="carousel-item active">
+                    <img src="img/adymartMiniatura.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- Contenedor con fondo blanco -->  
+                        <div style="justify-content:center; align-items: center; ; padding: 15px; width: 100% !important;">             
+                            <!-- Botón PLAY -->
+                            <a href="decoracionYHogar/indexDyH.html" class="btn btn-danger btn-lg" role="button" style="font-size: 24px">
+                                <i class="bi bi-play"></i> <strong>¡Hecha Un Vistazo!</strong> <img src="img/playIcon.png" alt="Play Icon" style="width: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/madewillMiniatura.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- Contenedor con fondo blanco -->  
+                        <div style="justify-content:center; align-items: center; padding: 15px; width: 100% !important;">             
+                            <!-- Botón PLAY -->
+                            <a href="artesanias/indexArtesanias.html" class="btn btn-danger btn-lg" role="button" style="font-size: 24px;">
+                                <i class="bi bi-play"></i> <strong>¡Hecha Un Vistazo!</strong> <img src="img/playIcon.png" alt="Play Icon" style="width: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="img/misTesorosMiniatura.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- Contenedor con fondo blanco -->  
+                        <div style="justify-content:center; align-items: center; padding: 15px; width: 100% !important;">             
+                            <!-- Botón PLAY -->
+                            <a href="artesanias/indexArtesanias.html"class="btn btn-danger btn-lg" role="button" style="font-size: 24px">
+                                <i class="bi bi-play"></i> <strong>¡Hecha Un Vistazo!</strong> <img src="img/playIcon.png" alt="Play Icon" style="width: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <img src="img/pigusMiniatura.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- Contenedor con fondo blanco -->  
+                        <div style="justify-content:center; align-items: center; padding: 15px; width: 100% !important;">             
+                            <!-- Botón PLAY -->
+                            <a href="Moda/indexModa.html" class="btn btn-danger btn-lg" role="button" style="font-size: 24px;">
+                                <i class="bi bi-play"></i> <strong>¡Hecha Un Vistazo!</strong> <img src="img/playIcon.png" alt="Play Icon" style="width: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+             
+            </div>
+              
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+         
+
+        <!-- Slider anuncio de las cards -->
+        <div class="row slider4">
+            <div class="col-xs-12">
+                <p>
+                    <strong> CREADORES </strong>
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- Carrusel de Tarjetas -->
+        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-group">
+
+                        <!-- PRIMERA HILERA DE CARDS -->
+                        <div class="card">
+                            <img src="img/ange.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Angela García</h5>
+                              <p class="card-text">Dira. Adymart</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <img src="img/weilber.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Alejandro Herrera</h5>
+                              <p class="card-text">Dir. MADEWILL</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/lau.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Laura Garzón</h5>
+                              <p class="card-text">Dira. Mis Tesoros</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <img src="img/ivan.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Iván Reyes</h5>
+                                <p class="card-text">Dir. Federal</p>
+                              </div>
+                        </div>
+
+
+                        <div class="card">
+                            <img src="img/melany.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Melany Cortes</h5>
+                                <p class="card-text">Dira. Piigu's</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- SEGUNDA HILERA DE CARDS -->
+                <div class="carousel-item">
+                    <div class="card-group">
+
+                        <div class="card">
+                            <img src="img/gustavo.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Gustavo Fajardo</h5>
+                              <p class="card-text">Dir. Rinconcito Floral</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/ana.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Ana M. Ramirez</h5>
+                              <p class="card-text">Dira. (Proyecto)</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/cris.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Cristian Cifuentes</h5>
+                              <p class="card-text">Dir. Wonder</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/zharick.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Zharick Alvarez</h5>
+                              <p class="card-text">Dira. Sanctumblack</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/gabriela.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Gabriela Rodriguez</h5>
+                              <p class="card-text">Dira. ChockoPops</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TERCERA HILERA DE CARDS -->
+                <div class="carousel-item">
+                    <div class="card-group">
+
+                        <div class="card">
+                            <img src="img/ppic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Álvaro Ruiz</h5>
+                              <p class="card-text">Dir. MásterSpring </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/denial.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Daniel Valderrama</h5>
+                              <p class="card-text">Dir. Doc Juguetes</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/juank.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Juan C. Abril</h5>
+                              <p class="card-text">Dir. Manufacturas ColCami</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/jhohan.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Jhohan Cortes </h5>
+                              <p class="card-text">Dir. (Proyecto)</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/mariana.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mariana Bautista</h5>
+                              <p class="card-text">Dira. Chatty Pelucas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CUARTA HILERA DE CARDS -->
+                <div class="carousel-item">
+                    <div class="card-group">
+
+                        <div class="card">
+                            <img src="img/angela.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Ángela Gaitán</h5>
+                              <p class="card-text">Dira. Santa Cosecha </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/monica.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Mónica Timón</h5>
+                              <p class="card-text">Dir. Floristeria E.G </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/jules.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Juliet Velasquez</h5>
+                              <p class="card-text">Dira. Kuroe</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/castillo.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Alejandro Castillo</h5>
+                              <p class="card-text">Dir. Jumbo Express</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/felipe.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Felipe Rodriguez</h5>
+                              <p class="card-text">Dir. Mi Primer Gran Paso</p>
+                            </div>
+                        </div>
+
+                        
+                        
+
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Botones de navegación del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Slider divisor -->
+        <div class="row sliderd">
+            <div class="col-12"></div>
+        </div>
+
+        <!-- Slider Terror en el 301 -->
+        <div class="row slider5 mb-4">
+            <div class="col-12 text-center">
+                <p class="display-4 text-white mb-4"> 
+                    <strong> 
+                        ¡Conoce nuestro escalofriante filminuto de halloween! 
+                    </strong>
+                </p>
+        
+                <!-- LOGO con margen inferior para crear espacio -->
+                <div class="logoterror-container mb-4">
+                    <img src="img/logoTerror301.png" class="img-fluid rounded" alt="Banner Terror en el 301">
+                </div>
+            </div>
+        </div>
+        
+
+        <!--CAJA CON BANNER DEL VIDEO T301 -->
+        <div class="bannerterror">
+            <img src="img/miniaturafilminuto.jpg" class="img-fluid rounded" alt="Banner Terror en el 301">
+            <div class="overlay">
+                <button onclick="verVideo()">Miralo ahora 
+                    <a href="filminuto/indexFilminuto.html">
+                        <img src="img/playIcon.png" alt="Play Icon" style="width: 40px;">
+                    </a>
+                    
+                    
+                    
+                </button>
+            </div>
+        </div>
+
+        <!-- Slider divisor -->
+        <div class="row sliderd">
+            <div class="col-12"></div>
+        </div>
+
+
+        <!-- Slider AUDIOVISUALES DE "SERVICIOS" -->
+        <div class="row slider6 mb-4">
+            <div class="col-12 text-center">
+                <p class="text-center">
+                    <strong class="d-block" style="color: white; font-size: 35px">
+                        Descubre la Experiencia:
+                    </strong>
+                    <div class="d-inline-block mx-auto text-center" style="font-size: 30px; color: white">
+                        <div>
+                            Servicios a Través de la Magia Visual y Sonora.
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- SECCIÓN SERVICIOS -->
+        <div class="d-flex justify-content-center align-items-center">
+            
+            <div class="pink-box text-center">
+                <div class="slider-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider">
+                        <a href="servicios/indexServicios.html">
+                            <p>¡Échale un vistazo!</p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="purple-box text-center">
+                    <div class="slider-container">
+                        <!-- Mini slider -->
+                        <div class="mini-slider">
+                           <a href="servicios/indexServicios.html" target="_blank">
+                                <p>¡Échale un vistazo!</p>
+                                <img src="img/playIcon.png" alt="Icono Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="mint-green-box text-center">
+                <div class="slider-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider">
+                       <a href="servicios/indexServicios.html" target="_blank">
+                            <p>¡Échale un vistazo!</p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Slider divisor -->
+        <div class="row sliderd">
+            <div class="col-12"></div>
+        </div>
+
+        <!-- Slider AUDIOVISUALES DE "ATESANÍAS" -->
+        <div class="row slider7 mb-4">
+            <div class="col-12 text-center">
+                <p class="text-center">
+                    <strong class="d-block" style="color: white; font-size: 35px">
+                        STREAM Las Mejores Artesanías por el 301+
+                    </strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- SECCIÓN ARTESANÍAS-->
+        <div class="d-flex justify-content-center align-items-center">
+            <!-- Nueva caja de color rosa pastel -->
+            <div class="orange-box text-center">
+                <div class="slider2-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider2">
+                        <a href="artesanias/indexArtesanias.html" target="_blank">
+                            <p>¡Échale un vistazo!</p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nueva caja de color violeta pastel -->
+            <div class="yellow-box text-center">
+                <div class="slider2-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider2">
+                        <a href="artesanias/indexArtesanias.html" target="_blank">
+                            <p>¡Échale un vistazo!</p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nueva caja de color violeta pastel -->
+            <div class="blue-box text-center">
+                <div class="slider2-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider2">
+                        <a href="artesanias/indexArtesanias.html" target="_blank">
+                            <p>¡Échale un vistazo!</p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider divisor -->
+        <div class="row sliderd">
+            <div class="col-12"></div>
+        </div>
+
+
+        <!-- Slider AUDIOVISUALES DE "COMIDA" -->
+        <div class="row slider8 mb-4">
+            <div class="col-12 text-center">
+                <p class="text-center">
+                    <strong class="d-block" style="color: white; font-size: 30px">
+                        ¿ANTOJO DE ALGO DULCE... SALADO?
+                    </strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- SECCIÓN COMIDA-->
+        <div class="d-flex justify-content-center align-items-center">
+ 
+            <div class="white-box text-center">
+                <div class="slider3-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider3">
+                        <a href="comida/indexComida.html" target="_blank">
+                            <p>¡Échale un vistazo!</p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div> 
+            </div>
+
+
+            <div class="brown-box text-center">
+                <div class="slider3-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider3">
+                        <a href="comida/indexComida.html" target="_blank">
+                            <p>¡Échale un vistazo!</p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+
+        <!-- Slider divisor -->
+        <div class="row sliderd">
+            <div class="col-12"></div>
+        </div>
+
+
+        <!-- SECCIÓN MODA-->
+        <div class="row slider8 mb-4">
+            <div class="col-12 text-center">
+                <p class="text-center">
+                    <strong class="d-block" style="color: white; font-size: 30px">
+                        Visiones Creativas: Moda en Video
+                    </strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+
+            <div class="gray-box text-center">
+                <div class="slider4-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider4">
+                        <a href="Moda/indexModa.html">
+                            <p>
+                                <strong>                                
+                                    ¡Échale un vistazo!                                                          
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="d-flex justify-content-center align-items-center">
+ 
+            <div class= "fucsia-box text-center">
+                <div class="slider4-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider4">
+                        <a href="Moda/indexModa.html" target="_blank">
+                            <p>
+                                <strong>
+                                    ¡Echale un vistazo!
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class= "neon-box text-center">
+                <div class="slider4-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider4">
+                        <a href="Moda/indexModa.html" target="_blank">
+                            <p>
+                                <strong>
+                                    ¡Echale un vistazo!
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nueva caja de color violeta pastel -->
+            <div class=" rey-box text-center">
+                <div class="slider4-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider4">
+                        <a href="Moda/indexModa.html" target="_blank">
+                            <p>
+                                <strong>
+                                    ¡Echale un vistazo!
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+
+            <div class="poop-box text-center">
+                <div class="slider4-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider4">
+                        <a href="Moda/indexModa.html" target="_blank">
+                            <p>
+                                <strong>
+                                    ¡Echale un vistazo!
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Slider divisor -->
+        <div class="row sliderd">
+            <div class="col-12"></div>
+        </div>
+
+
+        <!-- SECCIÓN DECORACIÓN Y HOGAR-->
+        <div class="row slider9 mb-4">
+            <div class="col-12 text-center">
+                <p class="text-center">
+                    <strong class="d-block" style="color: white; font-size: 35px">
+                        Detrás de Cada Rincón:
+                    </strong>
+                    <div class="d-inline-block mx-auto text-center" style="font-size: 30px; color: white">
+                        <div>
+                            Audiovisuales de Decoración.
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+
+            <div class="key-box text-center">
+                <div class="slider5-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider5">
+                        <a href="decoracionYHogar/indexDyH.html" target="_blank">
+                            <p>
+                                <strong>
+                                    ¡Echale un vistazo!
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="j-box text-center">
+                <div class="slider5-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider5">
+                        <a href="decoracionYHogar/indexDyH.html" target="_blank">
+                            <p>
+                                <strong>
+                                    ¡Echale un vistazo!
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="r-box text-center">
+                <div class="slider5-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider5">
+                        <a href="decoracionYHogar/indexDyH.html" target="_blank">
+                            <p>
+                                <strong>
+                                    ¡Echale un vistazo!
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Slider divisor -->
+        <div class="row sliderd">
+            <div class="col-12"></div>
+        </div>
+
+        <!-- SECCIÓN ENTRETENIMIENTO-->
+        <div class="row slider9 mb-4">
+            <div class="col-12 text-center">
+                <p class="text-center">
+                    <strong class="d-block" style="color: white; font-size: 35px">
+                        Magia Audiovisual | Tu Ración de Entretenimiento
+                    </strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            
+            <div class="p-box text-center">
+                <div class="slider6-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider6">
+                        <a href="entretenimiento/indexEntretenimiento.html" target="_blank">
+                            <p>
+                                <strong>
+                                    ¡Echale un vistazo!
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            
+            <div class= "z-box text-center">
+                <div class="slider6-container">
+                    <!-- Mini slider -->
+                    <div class="mini-slider6">
+                        <a href="entretenimiento/indexEntretenimiento.html">
+                            <p>
+                                <strong>                                
+                                    ¡Échale un vistazo!                                                          
+                                </strong>
+                            </p>
+                            <img src="img/playIcon.png" alt="Icono Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Slider divisor -->
+        <div class="row sliderd2">
+            <div class="col-12"></div>
+        </div>
+
+
+        <!-- SECCIÓN ABOUT-->
+        <div class="d-flex justify-content-center align-items-center">
+            
+            <div class="about-box text-center">
+                <p class="text-center">
+                    <strong>
+                        About DigiExpo301
+                    </strong>
+                    <div class="about-text font-size-20px">
+                        <div>
+                            Explora DigiExpo301, donde la creatividad joven se exhibe a través de filminutos y audiovisuales.
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <div>
+                            Promovemos emprendimientos locales y destacamos nuestra destreza en cámaras, edición, producción y más.
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <div>
+                            ¡Sumérgete en la innovación audiovisual de la nueva generación!
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="redes-box text-center d-flex justify-content-center align-items-center">
+                <a href="https://www.instagram.com/auralohaa/" target="_blank" rel="noopener noreferrer">
+                    <img src="img/igLogo.png" alt="Instagram" class="mx-2 my-2">
+                </a>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <div class= "copyright-box text-center justify-content-center align-items-center ">
+                <p class="text-white">
+                    © [2024] DigiExpo301 | Brillantes Digitales | Laura Jimena Garzón Roberto. Todos los derechos reservados. Innovando en la era digital con creatividad y pasión.
+                </p>
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtener todos los botones del menú con la clase 'dropdown-item'
+            const menuButtons = document.querySelectorAll('.dropdown-item');
+    
+            // Agregar un evento de clic a cada botón del menú
+            menuButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    // Obtener la URL de destino desde el atributo 'data-target'
+                    const targetURL = button.getAttribute('data-target');
+    
+                    // Redireccionar a la página en la subcarpeta
+                    window.location.href = targetURL;
+                });
+            });
+    
+            // Resto de tu script (scroll, verVideo, redirigirOtraPagina)
+            window.addEventListener("scroll", function () {
+                var slider = document.querySelector('.slider3');
+                var menuButtons = document.querySelector('.menuButtons');
+                var scrollTop = window.scrollY;
+    
+                if (scrollTop > 0) { // Puedes ajustar este valor según sea necesario
+                    slider.classList.add('fixed');
+                    menuButtons.classList.add('fixed');
+                } else {
+                    slider.classList.remove('fixed');
+                    menuButtons.classList.remove('fixed');
+                }
+            });
+    
+            function verVideo() {
+                // Aquí la lógica para abrir el video o redirigir a otra página.
+                alert("¡Video disponible ahora!");
+            }
+    
+            function redirigirOtraPagina() {
+                // Redirigir a otra página HTML
+                window.location.href = 'otra_pagina.html';
+            }
+        });
+    </script>
+    
+</body>
+
+
+
+
+
+
+</html>

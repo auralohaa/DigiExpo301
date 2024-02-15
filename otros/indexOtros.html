@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiExpo301 | OTROS</title>
+    <link rel="icon" href="imgOtros/logoIconPage.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesOtros.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Slider Logo y Menú desplegable -->
+    <div class="row slider3 fixed-top-row slider-fixed">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <!-- Botón del menú -->
+            <div class="dropdown">
+            </div>
+
+            <!-- LOGO -->
+            <div class="logo-container">
+                <a href="../index.html" class="logo-container">
+                    <img src="imgOtros/logo-no-background.png" class="rounded" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Barra de búsqueda en la Navbar -->
+            <div class="navbar">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#searchModal"> 
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal para la ventana emergente de búsqueda -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Contenido del formulario de búsqueda -->
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider Botones menú -->
+    <div class="menuButtons fixed-top-row fixed2-top-row2 d-none d-md-flex">
+        <div class="col-xs-12">
+            <div class="btn-group" role="group" aria-label="Menu Buttons">
+                <div class="btn-group" role="group" aria-label="Menu Buttons">
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='../servicios/indexServicios.html'">Servicios</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='../artesanias/indexArtesanias.html'">Artesanias</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='../comida/indexComida.html'">Comida</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='../Moda/indexModa.html'">Moda</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='../decoracionYHogar/indexDYH.html'">Decoración & Hogar</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='../entretenimiento/indexEntretenimiento.html'">Entretenimiento</button>
+                    <button type="button" class="btn btn-light custom-btn" onclick="location.href='../otros/indexOtros.html'">Otros</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrusel de Videos -->
+    <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- RESORTES -->
+            <div class="carousel-item active">
+                <div class="video-container position-relative embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/w-svFUG_m70?si=Yl4u2NnX0lu88m7i" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+                <div class="video-description">
+                    <strong>DIRECTOR</strong> 
+                    <div>
+                        ÁLVARO RUIZ
+                    </div> 
+                    <img src="imgOtros/alvaro.png" alt="Icono del creador" class="creator-icon">
+
+                    <p>
+                        <strong>Sinopsis</strong> 
+                        <div>
+                            Descubre la excelencia en resortes con MASTER SPRING. Este emocionante vistazo muestra cómo este emprendimiento
+                            ofrece soluciones precisas y confiables para una variedad de aplicaciones. Desde la industria hasta el consumidor, 
+                            MASTER SPRING establece un estándar de calidad incomparable en cada resorte que produce.
+
+                        </div> 
+                    </p>
+
+                    <div class="like-dislike-buttons">
+                        <button class="btn btn-primary">Like</button>
+                        <button class="btn btn-danger">Dislike</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAMISAS-->
+            <div class="carousel-item">
+                <div class="video-container position-relative">
+                    <iframe width="2100rem" height="1200rem" src="https://www.youtube.com/embed/TnjJAPEJ28k?si=BouzDCRfU29zMZot" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-description">
+                    <strong>DIRECTOR</strong> 
+                    <div>
+                        JUAN CAMILO ABRIL
+                    </div> 
+                    <img src="imgOtros/juank.png" alt="Icono del creador" class="creator-icon">
+
+                    <p>
+                        <strong>Sinopsis</strong> 
+                        <div>
+                            En el corazón de la confección, Manufacturas COLCAMI brilla como un emprendimiento líder en la fabricación de camisas. Este breve documental nos lleva tras bastidores,
+                            donde la pasión por la moda se combina con la precisión técnica.
+                            Desde la selección de telas de calidad hasta los detalles finales de diseño, COLCAMI se destaca por su compromiso con la elegancia y la excelencia en cada prenda.
+
+                        </div> 
+                    </p>
+
+                    <div class="like-dislike-buttons">
+                        <button class="btn btn-primary">Like</button>
+                        <button class="btn btn-danger">Dislike</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtener todos los botones del menú con la clase 'dropdown-item'
+            const menuButtons = document.querySelectorAll('.dropdown-item');
+    
+            // Agregar un evento de clic a cada botón del menú
+            menuButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    // Obtener la URL de destino desde el atributo 'data-target'
+                    const targetURL = button.getAttribute('data-target');
+    
+                    // Redireccionar a la página en la subcarpeta
+                    window.location.href = targetURL;
+                });
+            });
+    
+            // Resto de tu script (scroll, verVideo, redirigirOtraPagina)
+            window.addEventListener("scroll", function () {
+                var slider = document.querySelector('.slider3');
+                var menuButtons = document.querySelector('.menuButtons');
+                var scrollTop = window.scrollY;
+    
+                if (scrollTop > 100) { // Puedes ajustar este valor según sea necesario
+                    slider.classList.add('fixed');
+                    menuButtons.classList.add('fixed');
+                } else {
+                    slider.classList.remove('fixed');
+                    menuButtons.classList.remove('fixed');
+                }
+            });
+    
+            function verVideo() {
+                // Aquí la lógica para abrir el video o redirigir a otra página.
+                alert("¡Video disponible ahora!");
+            }
+    
+            function redirigirOtraPagina() {
+                // Redirigir a otra página HTML
+                window.location.href = 'otra_pagina.html';
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
