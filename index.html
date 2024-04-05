@@ -416,6 +416,42 @@
             <div class="col-12"></div>
         </div>
 
+
+        <!-- Slider CENIGRAF SE SIENTE -->
+
+        <div class="row slider5 mb-4">
+            <div class="col-12 text-center">
+                <p class="display-4 text-white mb-4"> 
+                    <strong> 
+                        ¡Únete a CENIGRAF SE SIENTE!
+                    </strong>
+                </p>
+            </div>
+        </div>
+
+
+
+        <!--CAJA CON CENIGRAF SE SIENTE -->
+        <div class="miniaturaYoutube" id="miniaturaYoutube">
+            <img src="img/miniaturaYoutube.png" class="img-fluid rounded" alt="Banner Terror en el 301">
+            <div class="overlay">
+                <button onclick="verVideo()">
+                    Miralo ahora 
+                    <img src="img/playIcon.png" alt="Play Icon" style="width: 40px;">
+                </button>
+            </div>
+        </div>
+        
+
+
+
+
+
+        <!-- Slider divisor -->
+        <div class="row sliderd">
+            <div class="col-12"></div>
+        </div>
+
         <!-- Slider Terror en el 301 -->
         <div class="row slider5 mb-4">
             <div class="col-12 text-center">
@@ -924,6 +960,18 @@
     </div>
 
     <script>
+    
+    function verVideo() {
+    
+        // ID del video de YouTube que deseas reproducir    
+        var videoId = 'VIDEO_ID_DEL_YOUTUBE';
+
+
+        // Código para reemplazar la miniatura con el reproductor de video de YouTube
+        var miniaturaYoutube = document.getElementById('miniaturaYoutube');
+        miniaturaYoutube.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/6uTCtU1xbz8?si=hFUWYa2ZCylIznNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+    }
+
         document.addEventListener('DOMContentLoaded', function () {
             // Obtener todos los botones del menú con la clase 'dropdown-item'
             const menuButtons = document.querySelectorAll('.dropdown-item');
